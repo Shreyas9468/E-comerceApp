@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Registeredpage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#ffff"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:padding="16dp"
+            android:text="Here's your first step with us!\nWelcome to our app!"
+            android:textColor="#121111"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="142dp"
+            android:layout_height="138dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logincornerimage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:background="#DFB811"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textColorHint="#D83636"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:textColorHint="#D83636"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/circular_button_background"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#D44141"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/backtomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_button_background"
+            android:text="New User Register Now!"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#D44141"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
